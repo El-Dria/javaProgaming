@@ -2,32 +2,33 @@ package weak5;
 
 import java.util.Scanner;
 
-public class SuccessOrFaill {
+public class GradingSwitch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String grade;
 		Scanner scanner = new Scanner(System.in);
 		
+		String grade;
 		System.out.println("점수를 입력하세요(0~100): ");
 		int score = scanner.nextInt();
-		if (score >= 90) {
+		switch (score/10) {
+		case 10:
+		case 9:
 			grade = "A";
-		}
-		else if (score >= 80) {
+			break;
+		case 8:
 			grade = "B";
-		}
-		else if (score >= 70) {
+			break;
+		case 7:
 			grade = "C";
-		}
-		else if (score >= 60) {
+			break;
+		case 6:
 			grade = "D";
-		}
-		else {
+			break;
+		default:
 			grade = "F";
 		}
 		System.out.println("학점은 " + grade + "입니다.");
-		
 		scanner.close();
 	}
 
