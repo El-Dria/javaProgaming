@@ -28,7 +28,7 @@ public class GradingSwitch {
 		default:
 			grade = "F";
 		}
-		System.out.println("학점은 " + grade + "입니다.");
+		System.out.println("학점은 " + grade + "입니다!");
 		scanner.close();
 	}
 
